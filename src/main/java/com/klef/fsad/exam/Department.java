@@ -14,7 +14,8 @@ public class Department {
     private String name;
     private String description;
 
-    @Temporal(TemporalType.DATE)
+    @SuppressWarnings("deprecation")
+	@Temporal(TemporalType.DATE)
     private Date date;
 
     private String status;

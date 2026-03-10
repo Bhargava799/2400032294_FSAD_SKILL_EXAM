@@ -20,7 +20,8 @@ public class ClientDemo {
         Session session = sf.openSession();
         Transaction tx = session.beginTransaction();
 
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
 
         System.out.println("1.Insert");
         System.out.println("2.Delete");
